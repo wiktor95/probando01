@@ -26,31 +26,42 @@
 &lt;/html&gt;
 </pre>
 </p>
+<p>Muchas de las etiquetas deben de estar cerradas com </..> pero tambien existen unas que no tiene esta función</p>
 <p>A continuación se mostrara más detalladamente los distintos elementeos y funciones que pueden tener acada uno de los componentes anteriores</p>
-<p> <h3>Iíndice</h3>
+<p> <h3><elto id=indice>Iíndice</elto></h3>
 <nav>
 <ol start="1"> <li>Head</li>
 <ol type="a">
-<li>Título</li>
-<li>Metadatos</li>
+<li><a href=#titulo>Título</a></li>
+<li><a href=#meta>Metadatos</a></li>
 </ol>
 <li>Secciones de body</li>
   <ol type="a">
-   <li>Artículo y sección</li>
-   <li>Header</li>
-   <li>Navegación</li>
-   <li>Aside</li>
-   <li>Footer</li>
-   <li>Address</li>
+   <li><a href=#arti>Artículo y sección</a></li>
+   <li><a href=#head>Header</a></li>
+   <li><a href=#nav>Navegación</a></li>
+   <li><a href=#aside>Aside</a></li>
+   <li><a href=#footer>Footer</a></li>
+   <li><a href=#address>Address</a></li>
+  </ol>
+ <li>Decoración de body</li>
+  <ol type="a">
+   <li><a href=#heading>Heading</a></li>
+   <li><a href=#parafo>Párrafo</a></li>
+   <li><a href=#texto>Texto preformateado</a></li>
+   <li><a href=#lista>Listas</a></li>
+   <li><a href=#linea>Línea horizontal</a></li>
+   <li><a href=#elementos>Elementos semánticos de texto</a></li>
   </ol>
 </ol>
 </nav>
 <br>
+<hr>
 
 <header>
-<h3><u>1. Head</u></h3>
+<h3><u><a href=#indice id="tindice">1. Head</a></u></h3>
 </header>
-<h3>1.a. Título</h3>
+<h3><elto id=titulo>1.a. Título</elto></h3>
 
 <p>El título es un elemento que no se presenta en la página del documento sino en su pestaña. Esta información se localiza en el head de la siguiente manera
 <pre>&lt;head&gt;
@@ -58,7 +69,7 @@
 &lt;/head&gt;</pre> 
 </p>
 
-<h3>1.b. Metadatos</h3>
+<h3><elto id=meta>1.b. Metadatos</elto></h3>
 
 <p>Los metadatos es la información sobre los datos que presenta el documento que se localiza en su head.
 <pre>Por ejemplo
@@ -69,9 +80,9 @@ Asi se sabe que tipo de codificaón se emplea en el documento</pre>
 </p>
 <br>
 <header>
-<h3><u>2. Secciones de body</u></h3>
+<h3><u><a href=#indice id="tindice">2. Secciones de body</a></u></h3>
 </header>
-<h3>2.a. Artículo y sección</h3>
+<h3><elto id=arti>2.a. Artículo y sección</elto></h3>
 <p>Un artículo es la parte del documento que contiene un determinado tema mientras que la sección es la que especifica una concreta parte de tema. Por ello una sección suel localizarse en un artículo pero tambien puede estecificar una parte del tema general del documento. Al igual que un artículo se puede localizar en una sección debido que esa puede tener su tema. Es decir su combinaciones pueden ser variables y se reperesentan asi:
 <pre>&lt;article&gt;
    &lt;section&gt;
@@ -92,7 +103,7 @@ O tambien
 &lt;/article&gt;
    </pre>
 </p>
-<h3>2.b. Header</h3>
+<h3><elto id=head>2.b. Header</elto></h3>
 
 <p>Header sirve para mostrar información de cabecera útil para un documento u otras secciones principales. Se introduce de la siguiente manera:
 <pre>&lt;header&gt;
@@ -100,7 +111,7 @@ O tambien
 &lt;/heaer&gt;</pre> 
 </p>
 
-<h3>2.c Navegación</h3>
+<h3><elto id=nav>2.c Navegación</elto></h3>
 
 <p>La etiqueta de navegación es la que crea un menú de navegación. Suele situarse despues del Header. Y se presenta asi:
 <pre>&lt;header/&gt;
@@ -109,7 +120,7 @@ O tambien
 Dentro de ella puede haber una lista.
 </p>
 
-<h3>2.d. Aside</h3>
+<h3><elto id=aside>2.d. Aside</elto></h3>
 
 <p>El elemento aside puede estar localizado en cualquier parte del diseño; la etiqueta no define la posición. El elemento aside sólo describe la información que engloba, no un lugar en la estructura y se puede utilizar siempre que el contenido no quiera ser considerado como el contenido principal del documento. Y se utliza de eta manera:
 <pre>&lt;aside&gt;
@@ -117,7 +128,7 @@ Dentro de ella puede haber una lista.
 &lt;/aside&gt;</pre> 
 </p>
 
-<h3>2.e. Footer</h3>
+<h3><elto id=footer>2.e. Footer</elto></h3>
 
 <p>El Elemento footer representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección
 <pre> ...
@@ -125,6 +136,125 @@ Dentro de ella puede haber una lista.
    &lt;/footer&gt;
 &lt;/body&gt;</pre> 
 </p>
+
+<h3><elto id=address>2.f. Address</elto></h3>
+
+<p>Este puede ser uno de los principsles contenidos footer. Su función es aportar la información sobre un enlaze cercano a el. Se representa asi:
+<pre>&lt;address&gt;
+   &lt;a href="..."&gt; <i>este es un ejemplo de enlaze</i> &lt;/a&gt;
+&lt;/address&gt;</pre> 
+</p>
+
+<header>
+<h3><u><a href=#indice id="tindice">3. Decoración de body</a></u></h3>
+</header>
+
+<h3><elto id=heading>3.a. Heading</elto></h3>
+
+<p>Esta etiqueta permite variar el tamaño de la leta, cuando la cifra es mayo el texto sera menor. Por ejemplo
+<pre >
+&lt;h1&gt;<i><h1 id="ejemplo"> texto </h1></i>&lt;/h1&gt; 
+     ...
+&lt;h6&gt;<i><h6 id="ejemplo"> texto </h6></i>&lt;/h6&gt;
+</pre> 
+</p>
+
+
+<h3><elto id=parafo>3.b. Párrafo</elto></h3>
+
+<p>Un párrafo puede estar situado en cualquier parte de body del documento, ya simplemente separa una información de la otra. Se introduce de una manera simple:
+<pre> ...
+   &lt;p&gt;<i>Este es el contenido del párrafo</i>
+   &lt;/p&gt;
+</pre> 
+</p>
+
+<h3><elto id=texto>3.c. Texto preformateado</elto></h3>
+
+<p>Este tipo etiqueta permite la introdución de un texto preformateado, es decir que lo presenta en el documento tal como fue introducido en el
+<pre> ...
+   &lt;pre&gt;<i>En la página </i> 
+         <i>estarán visibles</i>  
+     <i>estos saltos de línea y los espacios </i>
+   &lt;/pre&gt;
+</pre> 
+</p>
+
+<h3><elto id=lista>3.d. Listas</elto></h3>
+
+<p>Existen distintos tipos de lista que depende de su objetivo. pero en cada una de ellas su selementos se indican con la etiqueta "&lt;li&gt;" y se cierra con  &lt;/li&gt;:<br> 
+<h4> Lista ordenada</h4>
+<article><h5 id="ejemplo">Esta lista es la contiene unas normativas de organizacion:
+ <section> <b>start="number"</b> la cada elemento de la lista esta indicado con una numeración seguida la itroducida en el campo number
+
+  <pre> ...
+    &lt;ol start="1"&gt;
+     <i>Primero</i> 
+     <i>Segundo</i>  
+     <i>Tercero</i>
+    &lt;/ol&gt;
+  </pre>Antes de cada uno de estos elementos habra una cifra desde 1 hasta 3 seguida por un punto </section><br>  
+
+  <section> <b>type="tipo"</b> esta etiqueta permite un organización con distintes tipos de carácteres como <i> a, A l, i, I</i>.
+  <pre> ...
+    &lt;ol type="a"&gt;
+     <i>Primero</i> 
+     <i>Segundo</i>  
+     <i>Tercero</i>
+    &lt;/ol&gt;
+  </pre>Antes de cada uno de estos elementos habra una letra en minúscula desde a hasta c seguida por un punto. Si el tipo fuese <i>A</i> las letras estarian en mayúscula. Y la i indica una ordenación con números romanos</section><br> 
+
+<section> <b>reversed</b> esta etiqueta invierte el orden de los carácteres de la organización <i> a, A l, i, I</i>.
+  <pre> ...
+    &lt;ol type="a" reversed&gt;
+     <i>Primero</i> 
+     <i>Segundo</i>  
+     <i>Tercero</i>
+    &lt;/ol&gt;
+  </pre>Antes de cada uno de estos elementos habra una letra en minúscula desde c hasta a seguida por un punto.</section>
+
+</h5> </article>
+
+<h3>3.e. Linea horizontal</h3>
+
+<p>Esta etiqueta no lleva la etiqueta de cierre y su función es crear una línea horizontal visible en el documento para separar una información de otra
+<pre> ...
+   &lt;p&gt;<i>Este es el contenido del párrafo</i>
+   &lt;/p&gt;
+   &lt;hr&gt; (<i>línea horizontal</i>)
+   &lt;p&gt;<i>Este es el contenido del párrafo2</i>
+   &lt;/p&gt;
+</pre> 
+</p>
+
+<h3><elto id=elementos>3.f. Elementos semánticos</elto></h3>
+<p>
+<article><h4>Resaltos</h4>
+<section><h5 id="ejemplo"><b>Bastardilla</b> se introduce con &lt;i&gt; y cierra con &lt;/i&gt;. </h5></section>
+<section><h5 id="ejemplo"><b>Negrita</b> se introduce con &lt;b&gt; y cierra con &lt;/b&gt;. </h5></section>
+<section><h5 id="ejemplo"><b>Subrayado</b> se introduce con &lt;u&gt; y cierra con &lt;/u&gt;. </h5></section>
+<section><h5 id="ejemplo"><b>Reclamación</b> se introduce con <b>em</b> en la etiqueta del texto. </h5></section>
+<section><h5 id="ejemplo"><b>Destacamiento</b> se introduce con <b>strong</b> en la etiqueta del texto. </h5></section>
+<section><h5 id="ejemplo"><b>Letra pequeña</b> se introduce con <b>small</b> en la etiqueta del texto. </h5></section>
+<section><h5 id="ejemplo"><b>Irrelevante u obsoleto</b> se introduce con <b>s</b> en la etiqueta del texto. </h5></section>
+</article>
+<article><h4>Salto de línea</h4>
+<section><h5 id="ejemplo"><b>Salto obligatorio</b> se introduce con &lt;br&gt; sin el cierre. </h5></section>
+<section><h5 id="ejemplo"><b>Salto sugerenete</b> se introduce con &lt;wbr&gt; sin el cierre despues la palabra del texto que podria finalizar la línea. </h5></section>
+</article>
+article><h4>Hiperenlace</h4>
+<section><h5 id="ejemplo"><b>Interno</b> se indetifica un elemento com &lt;elto id=eltoX&gt; <i>elemento</i>&lt;/elto&gt;. Y se refiere con  &lt;a id=#eltoX&gt; <i>elemento</i>&lt;/a&gt; </h5></section>
+<section><h5 id="ejemplo"><b>General</b> se introduce con  &lt;a href="URL#identificador"&gt; <i>elemento</i>&lt;/a&gt;. </h5></section>
+<article><h5 id="ejemplo"><b>Atributos:</b> </h5>
+<section>download</section>
+<section>target</section>
+<section>etc</section>
+</article>
+</article>
+</p>
+
+
+
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/wiktor95/probando01">Probando01</a> is maintained by <a href="https://github.com/wiktor95">wiktor95</a>.</span>
 
