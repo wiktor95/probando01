@@ -10,7 +10,7 @@ body {
   color: #606c71; }
 
 a {
-  color: #1e6bb8;
+  color:#eff0f1;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
@@ -197,7 +197,7 @@ a {
     padding: 0;
     margin-bottom: 1rem; }
 .main-content hr {
-  height: 2px;
+  height: 12px;
   padding: 0;
   margin: 1rem 0;
   background-color: #eff0f1;
@@ -253,4 +253,14 @@ ol {
 header{
   background-color: #dce6f0;
   -webkit-margin-end: 600px;
+}
+#ejemplo {
+      color: #606c71;
+
+}
+hr {
+      height: 12px;
+}
+#tindice{
+  color: #159957;
 }
